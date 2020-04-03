@@ -15,4 +15,24 @@
         <deadline>12</deadline>
         <sapt_primire>12</sapt_primire>
     </Tema>
+    <Tema nr="7">
+        <descriere>tema1</descriere>
+        <deadline>3</deadline>
+        <sapt_primire>2</sapt_primire>
+    </Tema>
+    <Tema nr="10">
+        <descriere>tema</descriere>
+        <deadline>3</deadline>
+        <sapt_primire>2</sapt_primire>
+    </Tema>
+    <Tema nr="11">
+        <descriere>tema</descriere>
+        <deadline>3</deadline>
+        <sapt_primire>2</sapt_primire>
+    </Tema>
+    <Tema nr="12">
+        <descriere>tema</descriere>
+        <deadline>3</deadline>
+        <sapt_primire>2</sapt_primire>
+    </Tema>
 </Teme>

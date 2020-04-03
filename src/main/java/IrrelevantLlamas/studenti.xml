@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <inbox>
+    <Student idStudent="11">
+        <nume>Numee</nume>
+        <grupa>936</grupa>
+        <mail>email@yopmail.com</mail>
+        <profesor>un prof</profesor>
+    </Student>
     <Student idStudent="1">
         <nume>Roman Ionut</nume>
         <grupa>222</grupa>
@@ -13,6 +19,12 @@
         <profesor>Lovin Andrei</profesor>
     </Student>
     <Student idStudent="9">
+        <nume>Numee</nume>
+        <grupa>936</grupa>
+        <mail>email@yopmail.com</mail>
+        <profesor>un prof</profesor>
+    </Student>
+    <Student idStudent="10">
         <nume>Numee</nume>
         <grupa>936</grupa>
         <mail>email@yopmail.com</mail>

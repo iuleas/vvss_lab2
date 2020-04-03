@@ -2,6 +2,8 @@ package IrrelevantLlamas.Service;
 
 import IrrelevantLlamas.Domain.Teme;
 import IrrelevantLlamas.Repository.TemeRepo;
+import IrrelevantLlamas.Validator.ValidationException;
+import sun.security.validator.ValidatorException;
 
 public class ServiceTeme {
     private TemeRepo rep;
@@ -13,7 +15,12 @@ public class ServiceTeme {
      * @return tema adaugata
      */
     public Teme add(Teme s){
-        return rep.save(s);
+        try {
+            return rep.save(s);
+        } catch (ValidationException ex) {
+            System.out.println(ex);
+            return null;
+        }
     }
 
     /***
