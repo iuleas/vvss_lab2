@@ -1,31 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <inbox>
-    <Student idStudent="11">
+    <Student idStudent="1">
         <nume>Numee</nume>
         <grupa>936</grupa>
         <mail>email@yopmail.com</mail>
         <profesor>un prof</profesor>
-    </Student>
-    <Student idStudent="1">
-        <nume>Roman Ionut</nume>
-        <grupa>222</grupa>
-        <mail>riir3478@scs.ubbcluj.ro</mail>
-        <profesor>Plesu Andrei</profesor>
     </Student>
     <Student idStudent="2">
-        <nume>Gorea Andra</nume>
-        <grupa>921</grupa>
-        <mail>gaie1234@scs.ubbcluj.ro</mail>
-        <profesor>Lovin Andrei</profesor>
-    </Student>
-    <Student idStudent="9">
-        <nume>Numee</nume>
-        <grupa>936</grupa>
-        <mail>email@yopmail.com</mail>
-        <profesor>un prof</profesor>
-    </Student>
-    <Student idStudent="10">
-        <nume>Numee</nume>
+        <nume>Nume</nume>
         <grupa>936</grupa>
         <mail>email@yopmail.com</mail>
         <profesor>un prof</profesor>

@@ -2,6 +2,7 @@ package IrrelevantLlamas.Service;
 
 import IrrelevantLlamas.Domain.Student;
 import IrrelevantLlamas.Repository.StudentRepo;
+import IrrelevantLlamas.Validator.ValidationException;
 
 public class ServiceStudent {
     private StudentRepo rep;
@@ -10,7 +11,12 @@ public class ServiceStudent {
      * Adauga student
      * Returneaza studentul adaugat*/
     public Student add(Student s){
-        return rep.save(s);
+        try {
+            return rep.save(s);
+        } catch (ValidationException ex) {
+            System.out.println(ex);
+            return null;
+        }
     }
     /***
      * Sterge student
