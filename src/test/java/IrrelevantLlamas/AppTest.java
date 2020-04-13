@@ -24,7 +24,7 @@ public class AppTest
      */
 
     @Test
-    public void CorrectStudentTestCase() {
+    public void AddStudentCorrect() {
         StudentRepo rep = new StudentRepo(new StudentValidator(),"D:\\info\\ubb\\sem 6\\verificarea si validarea sistemelor soft\\lab2\\src\\main\\java\\IrrelevantLlamas\\studenti.xml");
         ServiceStudent srv = new ServiceStudent(rep);
         Student student = new Student("1", "Numee", 936, "email@yopmail.com", "un prof");
@@ -34,7 +34,7 @@ public class AppTest
     }
 
     @Test
-    public void StudentWithSameID() {
+    public void AddStudentWithSameID() {
         StudentRepo rep = new StudentRepo(new StudentValidator(),"D:\\info\\ubb\\sem 6\\verificarea si validarea sistemelor soft\\lab2\\src\\main\\java\\IrrelevantLlamas\\studenti.xml");
         ServiceStudent srv = new ServiceStudent(rep);
         Student student = new Student("2", "Nume", 936, "email@yopmail.com", "un prof");
@@ -46,7 +46,7 @@ public class AppTest
     }
 
     @Test
-    public void StudentWithWrongGroupTestCase() {
+    public void AddStudentWithWrongGroup() {
         StudentRepo rep = new StudentRepo(new StudentValidator(),"D:\\info\\ubb\\sem 6\\verificarea si validarea sistemelor soft\\lab2\\src\\main\\java\\IrrelevantLlamas\\studenti.xml");
         ServiceStudent srv = new ServiceStudent(rep);
         Student student = new Student("3", "Numee", 938, "email@yopmail.com", "un prof");
@@ -56,7 +56,7 @@ public class AppTest
     }
 
     @Test
-    public void StudentWithWrongNameTestCase() {
+    public void AddStudentWithWrongName() {
         StudentRepo rep = new StudentRepo(new StudentValidator(),"D:\\info\\ubb\\sem 6\\verificarea si validarea sistemelor soft\\lab2\\src\\main\\java\\IrrelevantLlamas\\studenti.xml");
         ServiceStudent srv = new ServiceStudent(rep);
         Student student = new Student("4", "Iu1ia Si1asi", 936, "email@yopmail.com", "un prof");
@@ -66,7 +66,7 @@ public class AppTest
     }
 
     @Test
-    public void StudentWithWrongEmailTestCase() {
+    public void AddStudentWithWrongEmail() {
         StudentRepo rep = new StudentRepo(new StudentValidator(),"D:\\info\\ubb\\sem 6\\verificarea si validarea sistemelor soft\\lab2\\src\\main\\java\\IrrelevantLlamas\\studenti.xml");
         ServiceStudent srv = new ServiceStudent(rep);
         Student student = new Student("5", "Iulia Silasi", 936, "email.com", "un prof");
@@ -76,7 +76,7 @@ public class AppTest
     }
 
     @Test
-    public void StudentWithWrongProfessorTestCase() {
+    public void AddStudentWithWrongProfessor() {
         StudentRepo rep = new StudentRepo(new StudentValidator(),"D:\\info\\ubb\\sem 6\\verificarea si validarea sistemelor soft\\lab2\\src\\main\\java\\IrrelevantLlamas\\studenti.xml");
         ServiceStudent srv = new ServiceStudent(rep);
         Student student = new Student("6", "Iulia Silasi", 936, "email.com", "1oana P0pa");
