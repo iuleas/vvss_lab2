@@ -104,4 +104,36 @@ public class AppTest
         srv.add(tema);
         assertEquals(prevLen + 1, rep.size());
     }
+
+    @Test
+    public void AddAssignmentWithWrongDeadline() {
+        TemeRepo rep = new TemeRepo(new TemeValidator(), "D:\\info\\ubb\\sem 6\\verificarea si validarea sistemelor soft\\lab2\\src\\main\\java\\IrrelevantLlamas\\teme.xml");
+        ServiceTeme srv = new ServiceTeme(rep);
+        Teme tema = new Teme(2, "tema", 2, 15);
+        int prevLen = rep.size();
+        srv.add(tema);
+        assertEquals(prevLen, rep.size());
+    }
+
+    @Test
+    public void AddAssignmentWithWrongDeliveryWeek() {
+        TemeRepo rep = new TemeRepo(new TemeValidator(), "D:\\info\\ubb\\sem 6\\verificarea si validarea sistemelor soft\\lab2\\src\\main\\java\\IrrelevantLlamas\\teme.xml");
+        ServiceTeme srv = new ServiceTeme(rep);
+        Teme tema = new Teme(3, "tema", 0, 4);
+        int prevLen = rep.size();
+        srv.add(tema);
+        assertEquals(prevLen, rep.size());
+    }
+
+    @Test
+    public void AddAssignmentWithSameID() {
+        TemeRepo rep = new TemeRepo(new TemeValidator(), "D:\\info\\ubb\\sem 6\\verificarea si validarea sistemelor soft\\lab2\\src\\main\\java\\IrrelevantLlamas\\teme.xml");
+        ServiceTeme srv = new ServiceTeme(rep);
+        Teme tema1 = new Teme(4, "tema1", 2, 4);
+        Teme tema2 = new Teme(4, "tema2", 3, 4);
+        srv.add(tema1);
+        int prevLen = rep.size();
+        srv.add(tema2);
+        assertEquals(prevLen, rep.size());
+    }
 }
