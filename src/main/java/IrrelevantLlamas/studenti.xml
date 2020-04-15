@@ -1,4 +1,45 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <inbox>
-
+    <Student idStudent="100">
+        <nume>Numee</nume>
+        <grupa>936</grupa>
+        <mail>email@yopmail.com</mail>
+        <profesor>un prof</profesor>
+    </Student>
+    <Student idStudent="1">
+        <nume>Numee</nume>
+        <grupa>936</grupa>
+        <mail>email@yopmail.com</mail>
+        <profesor>un prof</profesor>
+    </Student>
+    <Student idStudent="200">
+        <nume>Nume</nume>
+        <grupa>936</grupa>
+        <mail>email@yopmail.com</mail>
+        <profesor>un prof</profesor>
+    </Student>
+    <Student idStudent="2">
+        <nume>Numee</nume>
+        <grupa>936</grupa>
+        <mail>email@yopmail.com</mail>
+        <profesor>un prof</profesor>
+    </Student>
+    <Student idStudent="3">
+        <nume>Numee</nume>
+        <grupa>936</grupa>
+        <mail>email@yopmail.com</mail>
+        <profesor>un prof</profesor>
+    </Student>
+    <Student idStudent="998">
+        <nume>Numee</nume>
+        <grupa>936</grupa>
+        <mail>email@yopmail.com</mail>
+        <profesor>un prof</profesor>
+    </Student>
+    <Student idStudent="4005">
+        <nume>Numee</nume>
+        <grupa>936</grupa>
+        <mail>email@yopmail.com</mail>
+        <profesor>un prof</profesor>
+    </Student>
 </inbox>
