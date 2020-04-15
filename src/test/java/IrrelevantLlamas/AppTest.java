@@ -27,7 +27,7 @@ public class AppTest
     public void AddStudentCorrect() {
         StudentRepo rep = new StudentRepo(new StudentValidator(),"D:\\info\\ubb\\sem 6\\verificarea si validarea sistemelor soft\\lab2\\src\\main\\java\\IrrelevantLlamas\\studenti.xml");
         ServiceStudent srv = new ServiceStudent(rep);
-        Student student = new Student("1", "Numee", 936, "email@yopmail.com", "un prof");
+        Student student = new Student("100", "Numee", 936, "email@yopmail.com", "un prof");
         int prevLen = rep.size();
         srv.add(student);
         assertEquals(prevLen + 1, rep.size());
@@ -37,8 +37,8 @@ public class AppTest
     public void AddStudentWithSameID() {
         StudentRepo rep = new StudentRepo(new StudentValidator(),"D:\\info\\ubb\\sem 6\\verificarea si validarea sistemelor soft\\lab2\\src\\main\\java\\IrrelevantLlamas\\studenti.xml");
         ServiceStudent srv = new ServiceStudent(rep);
-        Student student = new Student("2", "Nume", 936, "email@yopmail.com", "un prof");
-        Student student2 = new Student("2", "AltNume", 936, "email@yopmail.com", "un prof");
+        Student student = new Student("200", "Nume", 936, "email@yopmail.com", "un prof");
+        Student student2 = new Student("200", "AltNume", 936, "email@yopmail.com", "un prof");
         srv.add(student);
         int prevLen = rep.size();
         srv.add(student2);
@@ -49,7 +49,7 @@ public class AppTest
     public void AddStudentWithWrongGroup() {
         StudentRepo rep = new StudentRepo(new StudentValidator(),"D:\\info\\ubb\\sem 6\\verificarea si validarea sistemelor soft\\lab2\\src\\main\\java\\IrrelevantLlamas\\studenti.xml");
         ServiceStudent srv = new ServiceStudent(rep);
-        Student student = new Student("3", "Numee", 938, "email@yopmail.com", "un prof");
+        Student student = new Student("300", "Numee", 938, "email@yopmail.com", "un prof");
         int prevLen = rep.size();
         srv.add(student);
         assertEquals(prevLen, rep.size());
@@ -59,7 +59,7 @@ public class AppTest
     public void AddStudentWithWrongName() {
         StudentRepo rep = new StudentRepo(new StudentValidator(),"D:\\info\\ubb\\sem 6\\verificarea si validarea sistemelor soft\\lab2\\src\\main\\java\\IrrelevantLlamas\\studenti.xml");
         ServiceStudent srv = new ServiceStudent(rep);
-        Student student = new Student("4", "Iu1ia Si1asi", 936, "email@yopmail.com", "un prof");
+        Student student = new Student("400", "Iu1ia Si1asi", 936, "email@yopmail.com", "un prof");
         int prevLen = rep.size();
         srv.add(student);
         assertEquals(prevLen, rep.size());
@@ -69,7 +69,7 @@ public class AppTest
     public void AddStudentWithWrongEmail() {
         StudentRepo rep = new StudentRepo(new StudentValidator(),"D:\\info\\ubb\\sem 6\\verificarea si validarea sistemelor soft\\lab2\\src\\main\\java\\IrrelevantLlamas\\studenti.xml");
         ServiceStudent srv = new ServiceStudent(rep);
-        Student student = new Student("5", "Iulia Silasi", 936, "email.com", "un prof");
+        Student student = new Student("500", "Iulia Silasi", 936, "email.com", "un prof");
         int prevLen = rep.size();
         srv.add(student);
         assertEquals(prevLen, rep.size());
@@ -79,7 +79,7 @@ public class AppTest
     public void AddStudentWithWrongProfessor() {
         StudentRepo rep = new StudentRepo(new StudentValidator(),"D:\\info\\ubb\\sem 6\\verificarea si validarea sistemelor soft\\lab2\\src\\main\\java\\IrrelevantLlamas\\studenti.xml");
         ServiceStudent srv = new ServiceStudent(rep);
-        Student student = new Student("6", "Iulia Silasi", 936, "email.com", "1oana P0pa");
+        Student student = new Student("600", "Iulia Silasi", 936, "email.com", "1oana P0pa");
         int prevLen = rep.size();
         srv.add(student);
         assertEquals(prevLen, rep.size());
@@ -99,7 +99,7 @@ public class AppTest
     public void AddAssignmentWithCorrectID() {
         TemeRepo rep = new TemeRepo(new TemeValidator(), "D:\\info\\ubb\\sem 6\\verificarea si validarea sistemelor soft\\lab2\\src\\main\\java\\IrrelevantLlamas\\teme.xml");
         ServiceTeme srv = new ServiceTeme(rep);
-        Teme tema = new Teme(1, "tema", 2, 3);
+        Teme tema = new Teme(100, "tema", 2, 3);
         int prevLen = rep.size();
         srv.add(tema);
         assertEquals(prevLen + 1, rep.size());
@@ -109,7 +109,7 @@ public class AppTest
     public void AddAssignmentWithWrongDeadline() {
         TemeRepo rep = new TemeRepo(new TemeValidator(), "D:\\info\\ubb\\sem 6\\verificarea si validarea sistemelor soft\\lab2\\src\\main\\java\\IrrelevantLlamas\\teme.xml");
         ServiceTeme srv = new ServiceTeme(rep);
-        Teme tema = new Teme(2, "tema", 2, 15);
+        Teme tema = new Teme(200, "tema", 2, 15);
         int prevLen = rep.size();
         srv.add(tema);
         assertEquals(prevLen, rep.size());
@@ -119,7 +119,7 @@ public class AppTest
     public void AddAssignmentWithWrongDeliveryWeek() {
         TemeRepo rep = new TemeRepo(new TemeValidator(), "D:\\info\\ubb\\sem 6\\verificarea si validarea sistemelor soft\\lab2\\src\\main\\java\\IrrelevantLlamas\\teme.xml");
         ServiceTeme srv = new ServiceTeme(rep);
-        Teme tema = new Teme(3, "tema", 0, 4);
+        Teme tema = new Teme(300, "tema", 0, 4);
         int prevLen = rep.size();
         srv.add(tema);
         assertEquals(prevLen, rep.size());
@@ -129,8 +129,8 @@ public class AppTest
     public void AddAssignmentWithSameID() {
         TemeRepo rep = new TemeRepo(new TemeValidator(), "D:\\info\\ubb\\sem 6\\verificarea si validarea sistemelor soft\\lab2\\src\\main\\java\\IrrelevantLlamas\\teme.xml");
         ServiceTeme srv = new ServiceTeme(rep);
-        Teme tema1 = new Teme(4, "tema1", 2, 4);
-        Teme tema2 = new Teme(4, "tema2", 3, 4);
+        Teme tema1 = new Teme(400, "tema1", 2, 4);
+        Teme tema2 = new Teme(400, "tema2", 3, 4);
         srv.add(tema1);
         int prevLen = rep.size();
         srv.add(tema2);
