@@ -30,8 +30,26 @@
         <mail>email@yopmail.com</mail>
         <profesor>un prof</profesor>
     </Student>
+    <Student idStudent="1662">
+        <nume>Numee</nume>
+        <grupa>936</grupa>
+        <mail>email@yopmail.com</mail>
+        <profesor>un prof</profesor>
+    </Student>
+    <Student idStudent="1661">
+        <nume>Nume</nume>
+        <grupa>936</grupa>
+        <mail>email@yopmail.com</mail>
+        <profesor>un prof</profesor>
+    </Student>
     <Student idStudent="998">
         <nume>Numee</nume>
+        <grupa>936</grupa>
+        <mail>email@yopmail.com</mail>
+        <profesor>un prof</profesor>
+    </Student>
+    <Student idStudent="1660">
+        <nume>Nume</nume>
         <grupa>936</grupa>
         <mail>email@yopmail.com</mail>
         <profesor>un prof</profesor>
